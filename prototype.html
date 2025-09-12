@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype & Demonstrations - Pravass Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .prototype-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .prototype-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .prototype-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .prototype-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .prototype-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .prototype-caption {
+            padding: 15px;
+            background-color: #f8f8f8;
+        }
+        
+        .prototype-caption h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 18px;
+        }
+        
+        .prototype-caption p {
+            margin-bottom: 0;
+            color: #555;
+            font-size: 14px;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .demo-section {
+            margin-bottom: 40px;
+        }
+        
+        .interactive-demo {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Pravass</h2>
+                <p>Tourism App Documentation</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="solution-overview.html">Solution Overview</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Key Features</a>
+                        <div class="dropdown-content">
+                            <a href="features/ai-itinerary.html">AI-Powered Itinerary</a>
+                            <a href="features/navigation.html">Real-Time Navigation</a>
+                            <a href="features/ar-vr.html">AR/VR Previews</a>
+                            <a href="features/blockchain.html">Blockchain Payments</a>
+                            <a href="features/marketplace.html">Local Marketplace</a>
+                            <a href="features/chatbot.html">Multilingual Chatbot</a>
+                            <a href="features/feedback.html">Feedback Analysis</a>
+                            <a href="features/analytics.html">Analytics Dashboard</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Technologies</a>
+                        <div class="dropdown-content">
+                            <a href="technologies/ai-ml.html">AI & Machine Learning</a>
+                            <a href="technologies/blockchain.html">Blockchain</a>
+                            <a href="technologies/ar-vr.html">AR/VR</a>
+                            <a href="technologies/cloud.html">Cloud & Analytics</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">How It Works</a>
+                        <div class="dropdown-content">
+                            <a href="how-it-works/user-flow.html">User Flow</a>
+                            <a href="how-it-works/core-functions.html">Core Functionalities</a>
+                            <a href="how-it-works/data-security.html">Data & Security</a>
+                        </div>
+                    </li>
+                    <li><a href="challenges.html">Challenges & Solutions</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Impact & Benefits</a>
+                        <div class="dropdown-content">
+                            <a href="impact/social.html">Social Impact</a>
+                            <a href="impact/economic.html">Economic Growth</a>
+                            <a href="impact/environmental.html">Environmental Care</a>
+                        </div>
+                    </li>
+                    <li><a href="prototype.html" class="active">Prototype & Demos</a></li>
+                    <li><a href="future.html">Future Enhancements</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h1>Prototype & Demonstrations</h1>
+            
+            <div class="card">
+                <h2>Overview</h2>
+                <p>This section showcases the Pravass application prototype through screenshots, videos, and interactive demonstrations. These materials illustrate how the various features and technologies come together to create a seamless tourism experience for visitors to Jharkhand.</p>
+            </div>
+
+            <div class="card">
+                <h2>App Interface Showcase</h2>
+                <p>Below are screenshots of the Pravass mobile application interface, demonstrating the user experience across key features:</p>
+                
+                <div class="prototype-grid">
+                    <div class="prototype-item">
+                        <img src="images/prototype/home-screen.png" alt="Pravass Home Screen">
+                        <div class="prototype-caption">
+                            <h3>Home Screen</h3>
+                            <p>The main dashboard with personalized recommendations and quick access to key features.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="prototype-item">
+                        <img src="images/prototype/itinerary-planner.png" alt="AI Itinerary Planner">
+                        <div class="prototype-caption">
+                            <h3>AI Itinerary Planner</h3>
+                            <p>The AI-powered itinerary creation interface with preference selection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="prototype-item">
+                        <img src="images/prototype/ar-view.png" alt="AR Experience View">
+                        <div class="prototype-caption">
+                            <h3>AR Experience</h3>
+                            <p>Augmented Reality view showing cultural information overlay at a historical site.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="prototype-item">
+                        <img src="images/prototype/marketplace.png" alt="Local Marketplace">
+                        <div class="prototype-caption">
+                            <h3>Local Marketplace</h3>
+                            <p>The marketplace interface showing local handicrafts with blockchain verification.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="prototype-item">
+                        <img src="images/prototype/chatbot.png" alt="Multilingual Chatbot">
+                        <div class="prototype-caption">
+                            <h3>Multilingual Chatbot</h3>
+                            <p>The chatbot interface showing conversation in multiple languages.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="prototype-item">
+                        <img src="images/prototype/blockchain-wallet.png" alt="Blockchain Wallet">
+                        <div class="prototype-caption">
+                            <h3>Blockchain Wallet</h3>
+                            <p>The secure payment interface with transaction verification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Video Demonstrations</h2>
+                <p>Watch these video demonstrations to see the Pravass app in action:</p>
+                
+                <div class="demo-section">
+                    <h3>App Overview & Key Features</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/demo-video-id-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>A comprehensive walkthrough of the Pravass app, showcasing its main features and user interface.</p>
+                </div>
+                
+                <div class="demo-section">
+                    <h3>AI Itinerary Creation Process</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/demo-video-id-2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>Step-by-step demonstration of how the AI creates personalized itineraries based on user preferences.</p>
+                </div>
+                
+                <div class="demo-section">
+                    <h3>AR/VR Experience Demo</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/demo-video-id-3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>Live demonstration of the AR features at key attractions in Jharkhand and VR preview capabilities.</p>
+                </div>
+                
+                <div class="demo-section">
+                    <h3>Blockchain Payment & Verification</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/demo-video-id-4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>Demonstration of the secure blockchain payment system and NFT verification for authentic handicrafts.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Interactive Prototype</h2>
+                <p>Explore our interactive prototype to experience the app's navigation and core features:</p>
+                
+                <div class="interactive-demo">
+                    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fpravass-prototype-id" width="100%" height="600" allowfullscreen></iframe>
+                </div>
+                
+                <p><strong>Instructions:</strong> Click through the prototype to navigate between screens. You can explore the home screen, itinerary planner, AR view, marketplace, and other key features.</p>
+            </div>
+
+            <div class="card">
+                <h2>User Testing Results</h2>
+                <h3>Key Metrics from Prototype Testing</h3>
+                <ul>
+                    <li><strong>User Satisfaction:</strong> 92% of test users rated the app experience as "excellent" or "very good"</li>
+                    <li><strong>Task Completion:</strong> 88% success rate for completing core tasks without assistance</li>
+                    <li><strong>Feature Popularity:</strong> AR/VR features and personalized itineraries were the most highly rated features</li>
+                    <li><strong>Learning Curve:</strong> 85% of users reported the app was "easy" or "very easy" to learn</li>
+                </ul>
+                
+                <h3>User Feedback Highlights</h3>
+                <blockquote>
+                    "The AR feature showing the history of monuments was fascinating. It made the visit so much more meaningful." - Test User, 28
+                </blockquote>
+                
+                <blockquote>
+                    "I loved how the app suggested places I wouldn't have known about otherwise. The personalized itinerary felt like having a local friend guide me." - Test User, 35
+                </blockquote>
+                
+                <blockquote>
+                    "Being able to directly support local artisans and know the products are authentic gives me confidence as a tourist." - Test User, 42
+                </blockquote>
+            </div>
+
+            <div class="card">
+                <h2>Technical Implementation</h2>
+                <h3>Development Stack</h3>
+                <ul>
+                    <li><strong>Frontend:</strong> React Native for cross-platform mobile development</li>
+                    <li><strong>Backend:</strong> Node.js with Express, deployed on AWS</li>
+                    <li><strong>Database:</strong> MongoDB for user data, PostgreSQL for structured tourism information</li>
+                    <li><strong>AI Components:</strong> TensorFlow for recommendation engine, deployed on Google Cloud AI Platform</li>
+                    <li><strong>AR/VR:</strong> Unity with ARCore/ARKit integration</li>
+                    <li><strong>Blockchain:</strong> Ethereum-compatible smart contracts with Layer 2 solution for scalability</li>
+                </ul>
+                
+                <h3>Architecture Diagram</h3>
+                <img src="images/prototype/architecture-diagram.png" alt="Pravass Technical Architecture" style="width:100%; max-width:800px; margin:20px auto; display:block;">
+            </div>
+
+            <div class="card">
+                <h2>Deployment Roadmap</h2>
+                <h3>Current Status: Beta Testing</h3>
+                <p>The Pravass prototype is currently in beta testing with a selected group of users in key tourist locations across Jharkhand.</p>
+                
+                <h3>Next Steps</h3>
+                <ol>
+                    <li><strong>Feedback Integration (Q3 2025):</strong> Incorporating user feedback from beta testing</li>
+                    <li><strong>Feature Refinement (Q4 2025):</strong> Optimizing AI recommendations and AR experiences</li>
+                    <li><strong>Service Provider Onboarding (Q4 2025):</strong> Expanding the network of verified local service providers</li>
+                    <li><strong>Public Launch (Q1 2026):</strong> Full public release with marketing campaign</li>
+                    <li><strong>Expansion (Q2-Q4 2026):</strong> Extending coverage to additional regions in Jharkhand</li>
+                </ol>
+            </div>
+
+            <div class="next-section">
+                <a href="future.html">Next: Future Enhancements →</a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
