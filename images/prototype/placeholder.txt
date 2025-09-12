@@ -9,4 +9,4 @@ The following images should be added to this directory:
 - blockchain-wallet.png
 - architecture-diagram.png
 
-These should be screenshots of the actual Pravass application prototype.
+These should be screenshots of the actual pravas application prototype.
