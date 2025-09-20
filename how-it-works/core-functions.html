@@ -92,7 +92,7 @@
                     </li>
                     <li><strong>Microservices Layer:</strong>
                         <ul>
-                            <li>Domain-specific services (itinerary, booking, marketplace, etc.)</li>
+                            <li>Independent services: Itinerary, Booking, Marketplace, AR/VR, Chatbot, Analytics</li>
                             <li>Independent deployment and scaling</li>
                             <li>Service discovery and registry</li>
                             <li>Inter-service communication patterns</li>
@@ -100,10 +100,10 @@
                     </li>
                     <li><strong>Data Layer:</strong>
                         <ul>
-                            <li>Polyglot persistence with appropriate databases for different needs</li>
-                            <li>Data synchronization mechanisms</li>
-                            <li>Caching strategies for performance</li>
-                            <li>Data backup and recovery systems</li>
+                            <li>MongoDB for bookings, transactions, and user data</li>
+                            <li>NoSQL document model for profiles, preferences, and itineraries</li>
+                            <li>Graph Database for attraction and cultural relationships</li>
+                            <li>Caching and backup systems for reliability</li>
                         </ul>
                     </li>
                     <li><strong>Integration Layer:</strong>
